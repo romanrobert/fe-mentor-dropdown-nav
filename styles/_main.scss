@@ -1,0 +1,124 @@
+.hero-wrapper{
+    max-width: 75rem;
+   
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    column-gap: 9.375rem;
+    
+}
+
+.hero__copy{
+    margin-top: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    max-width: 549px;
+
+    h1{
+        font-size: 4.875rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+
+    p{
+        font-size: 1.125rem;
+        max-width: 45ch;
+        line-height: 1.5rem;
+        color: $clr-medium-gray;
+    }
+
+    button{
+        margin-top: 3.4375rem;
+        width: 10.1875rem;
+        height: 3.5rem;
+        border-radius: 16px;
+        border: none;
+        background-color: $clr-dark;
+        color: $clr-white;
+        font-size: 1.125rem;
+        font-family: inherit;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color: $clr-dark;
+        }
+    }
+}
+
+.hero__img{
+   
+    max-width: 478px;
+    height: 640px;
+    margin-top: 2.5rem;
+}
+
+.hero__img-m{
+    display: none;
+}
+
+.copy__clients{
+    margin-top: 6.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and(max-width:748px){
+
+    .hero-wrapper{
+        margin: auto;
+      margin-top: 1rem;
+      width: 100%;
+      
+    }
+
+    .hero__img{
+        display: none;
+    }
+
+    .hero__img-m{
+        display:flex;
+        width: 100%;
+        max-width:375px;
+    }
+
+    .hero__copy{
+        
+        width: 95%;
+        margin: auto;
+        margin-top: 2.875rem;
+        h1{
+            font-size: 2.25rem;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        p{
+            text-align: center;
+            margin-top:1.5rem ;
+        }
+        button{
+            align-self: center;
+            &:hover{
+                background-color: #fff;
+                color: $clr-dark;
+            }
+        }
+    }
+
+
+    .copy__clients{
+        width: 90%;
+        margin-top: 2.5rem;
+        li{
+            scale: 0.8;
+        }
+    }
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-wrapper">
+      <div class="nav-left">
+      <img src="images/logo.svg" aria-hidden="true" class="logo">
+      <div class="nav__menu ">
+       <div class="menu__item features dropdown-toggle">
+         <a  href="#">Features<img class="arrow-features" src="images/icon-arrow-up.svg" aria-hidden="true"></a>
+             <!-- Features dropdown menu start -->
+             <div class="features-dropdown dropdown">
+              <div class="features__item">
+                <img src="images/icon-todo.svg" alt="">
+                <a href="#">Todo List</a>
+              </div>
+              <div class="features__item">
+               <img src="images/icon-calendar.svg" alt="">
+               <a href="#">Calendar</a>
+             </div>
+             <div class="features__item">
+               <img src="images/icon-reminders.svg" alt="">
+               <a href="#">Reminders</a>
+             </div>
+             <div class="features__item">
+               <img src="images/icon-planning.svg" alt="">
+               <a href="#">Planning</a>
+             </div>
+            </div> 
+            <!-- Features dropdown menu end -->
+       </div>
+       <div class="menu__item company dropdown-toggle">
+        <a href="#">Company<img class="arrow-company" src="images/icon-arrow-up.svg" aria-hidden="true"></a>
+        <!-- Company dropdown start -->
+        <div class="company-dropdown ">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+        <!-- Company dropdown end -->
+       </div>
+      <div class="menu__item">
+        <a href="#">Careers</a>
+      </div>
+      <div class="menu__item">
+        <a href="#">About</a>
+      </div>
+      </div>
+    </div>
+      <div class="nav__btn">
+        <button class="btn-secondary">Login</button>
+        <button class="btn-primary">Register</button>
+      </div>
+    
+      <div class="burger">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+    </div>
+    </div>
+  </nav>
+  <main>
+    <div class="hero-wrapper">
+      <div class="hero__copy">
+        <h1>Make  remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button class="hero-btn">Learn more</button>
+          <ul class="copy__clients">
+            <li><img src="images/client-databiz.svg" alt=""></li>
+            <li><img src="images/client-audiophile.svg" alt=""></li>
+            <li><img src="images/client-meet.svg" alt=""></li>
+            <li><img src="images/client-maker.svg" alt=""></li>
+          </ul>
+      </div>
+      <img src="images/image-hero-desktop.png" alt="" class="hero__img">
+      <img src="images/image-hero-mobile.png" alt="" class="hero__img-m">
+    </div>
+  </main>
+  <div class="backdrop"></div>
+   
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
